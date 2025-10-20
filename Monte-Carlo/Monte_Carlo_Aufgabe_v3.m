@@ -55,7 +55,3 @@ function hPF = plotPolyfits(x, y, N, supportPointsList)
         end
     end
 end
-
-%Test
-%Test2
-%Test3
