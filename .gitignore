@@ -1,0 +1,12 @@
+# Testordner ignorieren
+Tests/
+
+# Temporäre MATLAB-Dateien
+*.asv
+*.fig
+*.mat
+*.mex*
+
+# Persönliche Editor-Dateien
+.vscode/
+*.m~
