@@ -1,7 +1,7 @@
 clear; clc; close all;
 
 % Parameter
-a_mean = 1; a_std = 0.005; b = 10; c = 5;
+a_mean = 1; a_std = 0.05; b = 10; c = 5;
 
 % Benutzerabfrage
 N = input('Wie viele Monte-Carlo-Durchläufe möchten Sie durchführen? ');
@@ -55,3 +55,6 @@ function hPF = plotPolyfits(x, y, N, supportPointsList)
         end
     end
 end
+
+
+% Problem: Indexierung/Dimensionierung falsch
