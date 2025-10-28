@@ -2,7 +2,7 @@
 
 clear; clc; close all;
 
-%% 1. Sollwertverlauf (ideal)
+% 1. Sollwertverlauf (ideal)
 x_dense = linspace(0, 5, 200);          % dichte x-Werte für Kurve
 y_soll = 0.05*x_dense.^5 - 0.2*x_dense.^4 + x_dense.^3 - 0.5*x_dense.^2 + 1.5*x_dense + 2;
 
