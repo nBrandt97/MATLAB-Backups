@@ -26,7 +26,7 @@ legend([hMC(1), hPF], {'Monte-Carlo-Parabeln', 'Polyfits'});
 % Funktion für Monte-Carlo-Parabeln
 function [x, y, hMC] = plotMonteCarloParabeln(N, a_mean, a_std, b, c)
     x = linspace(-10, 10, 20);
-    a = a_mean + a_std*randn(N,1);
+    a = a_mean + a_std * randn(N,1);
     y = a .* (x.^2) + b*x + c;
     
     hMC = plot(x, y, 'b');   % Plot und Handle für Legende
@@ -51,7 +51,7 @@ function hPF = plotPolyfits(x, y, N, supportPointsList)
             x_fit = linspace(min(x_subset), max(x_subset), 50);
             y_fit = polyval(p, x_fit);
             
-            hPF = plot(x_fit, y_fit, 'r--'); % Handle für Legende wird überschrieben, reicht
+            hPF = plot(x_fit, y_fit, 'r--'); % Handle für Legende wird überschrieben
         end
     end
 end
